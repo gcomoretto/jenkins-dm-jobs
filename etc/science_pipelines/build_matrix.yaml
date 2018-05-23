@@ -15,6 +15,11 @@ template:
       label: centos-7
       compiler: *linux_compiler
       python: '3'
+    - &el6-dts7-py3
+      image: docker.io/lsstsqre/centos:6-stackbase-devtoolset-7
+      label: centos-6
+      compiler: devtoolset-7
+      python: '3'
     - &el7-dts7-py3
       image: docker.io/lsstsqre/centos:7-stackbase-devtoolset-7
       label: centos-7
